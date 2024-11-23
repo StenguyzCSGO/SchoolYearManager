@@ -1,0 +1,38 @@
+\doxysection{promotion.\+h}
+\hypertarget{promotion_8h_source}{}\label{promotion_8h_source}\mbox{\hyperlink{promotion_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <QList>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{student_8h}{student.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{observer_8h}{observer.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_promotion}{Promotion}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_observable}{Observable}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ QList<Student>\ students;\ }
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00021\ \ \ \ \ \mbox{\hyperlink{class_promotion_a13d1b5b70603760910b4a31fe19c32f4}{Promotion}}(QString\ filename);}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}{\string~Promotion}}()\ \{\ qDebug()\ <<\ \textcolor{stringliteral}{"{}[-\/]\ Promotion"{}};\ \}}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_promotion_afbbd47a81de3b07fb78b43c4acd63543}{add}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&);}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00038\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_promotion_a93be5d04ed973e6e1f02e1456e67d8ef}{remove}}(\textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&);}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_promotion_a93be5d04ed973e6e1f02e1456e67d8ef}{remove}}(\textcolor{keyword}{const}\ QString\ \&);}
+\DoxyCodeLine{00045\ }
+\DoxyCodeLine{00051\ \ \ \ \ \mbox{\hyperlink{class_student}{Student}}\ \mbox{\hyperlink{class_promotion_a4e53cfc026ac48e3953e5b2b539d891a}{find}}(QString)\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ QStringList\ \mbox{\hyperlink{class_promotion_a34ff60834f34f45b407e998e82f160b9}{getList}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00065\ \ \ \ \ \textcolor{keyword}{friend}\ QDebug\ \mbox{\hyperlink{class_promotion_a2c6c612eaab6f0dcbb6fc19585ef3754}{operator<<}}(QDebug\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_promotion}{Promotion}}\&\ dt);}
+\DoxyCodeLine{00066\ }
+\DoxyCodeLine{00071\ \ \ \ \ QMap<QString,\ int>\ \mbox{\hyperlink{class_promotion_a18b55cddbe8c16b3c8185a97b9f26818}{getBacList}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00077\ \ \ \ \ QMap<QString,\ int>\ \mbox{\hyperlink{class_promotion_a067261358b9aebb409d73cce92872ae0}{getDepartementList}}()\ \textcolor{keyword}{const};}
+\DoxyCodeLine{00078\ \};}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00086\ QDebug\ \mbox{\hyperlink{promotion_8h_a2c6c612eaab6f0dcbb6fc19585ef3754}{operator<<}}(QDebug\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_promotion}{Promotion}}\&\ dt);}
+
+\end{DoxyCode}

@@ -1,0 +1,60 @@
+\doxysection{Observer Class Reference}
+\hypertarget{class_observer}{}\label{class_observer}\index{Observer@{Observer}}
+
+
+Interface pour les observateurs.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+Inheritance diagram for Observer\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_observer}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observer_a37824643eeaef086de17bba2717d865a}{\texorpdfstring{$\sim$}{\string~}\+Observer}} ()=default
+\item 
+virtual void \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{update}} ()=0
+\begin{DoxyCompactList}\small\item\em Met à jour l\textquotesingle{}observateur. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface pour les observateurs. 
+
+Classe de base pour un observateur, doit implementer \doxylink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{update()}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_observer_a37824643eeaef086de17bba2717d865a}\index{Observer@{Observer}!````~Observer@{\texorpdfstring{$\sim$}{\string~}Observer}}
+\index{````~Observer@{\texorpdfstring{$\sim$}{\string~}Observer}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Observer()}{\string~Observer()}}
+{\footnotesize\ttfamily \label{class_observer_a37824643eeaef086de17bba2717d865a} 
+virtual Observer\+::\texorpdfstring{$\sim$}{\string~}\+Observer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}\index{Observer@{Observer}!update@{update}}
+\index{update@{update}!Observer@{Observer}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215} 
+virtual void Observer\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Met à jour l\textquotesingle{}observateur. 
+
+À implémenter dans la classe dérivée 
+
+Implemented in \mbox{\hyperlink{class_view_forms_a06b6ab988036097375f7b50c26b4a302}{View\+Forms}}, \mbox{\hyperlink{class_view_histogram_a9d8a8c46008ff6ea819deff0c5f29e33}{View\+Histogram}}, \mbox{\hyperlink{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}{View\+List}}, and \mbox{\hyperlink{class_view_pie_chart_a164b314e0401cc0bd511afc35e5a43b7}{View\+Pie\+Chart}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{observer_8h}{observer.\+h}}\end{DoxyCompactItemize}

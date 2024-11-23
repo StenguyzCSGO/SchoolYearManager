@@ -1,0 +1,95 @@
+\doxysection{Controller\+Add Class Reference}
+\hypertarget{class_controller_add}{}\label{class_controller_add}\index{ControllerAdd@{ControllerAdd}}
+
+
+Contrôleur pour l\textquotesingle{}ajout d\textquotesingle{}étudiants.  
+
+
+
+
+{\ttfamily \#include $<$controlleradd.\+h$>$}
+
+Inheritance diagram for Controller\+Add\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller_add}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_add_aae3535b3e674f5d2708d03f331eaa6e6}{Controller\+Add}} (\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}\+\_\+promo, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+id, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+firstname, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+lastname, QCombo\+Box \texorpdfstring{$\ast$}{*}\+\_\+bac, QCombo\+Box \texorpdfstring{$\ast$}{*}\+\_\+departement)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controller_add_a30d6a1039043ca506606bec9ca8e1f4a}{control}} () override
+\begin{DoxyCompactList}\small\item\em Contrôle l\textquotesingle{}ajout d\textquotesingle{}un étudiant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+
+
+\doxysubsection{Detailed Description}
+Contrôleur pour l\textquotesingle{}ajout d\textquotesingle{}étudiants. 
+
+Hérite de \doxylink{class_controller}{Controller}, gère l\textquotesingle{}ajout d\textquotesingle{}un étudiant dans la promo. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_controller_add_aae3535b3e674f5d2708d03f331eaa6e6}\index{ControllerAdd@{ControllerAdd}!ControllerAdd@{ControllerAdd}}
+\index{ControllerAdd@{ControllerAdd}!ControllerAdd@{ControllerAdd}}
+\doxysubsubsection{\texorpdfstring{ControllerAdd()}{ControllerAdd()}}
+{\footnotesize\ttfamily \label{class_controller_add_aae3535b3e674f5d2708d03f331eaa6e6} 
+Controller\+Add\+::\+Controller\+Add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{\+\_\+promo}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+id}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+firstname}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+lastname}{, }\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{\+\_\+bac}{, }\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{\+\_\+departement}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur du contrôleur d\textquotesingle{}ajout d\textquotesingle{}étudiant.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+promo} & Instance de \doxylink{class_promotion}{Promotion} \\
+\hline
+{\em \+\_\+id} & Champ de l\textquotesingle{}identifiant \\
+\hline
+{\em \+\_\+firstname} & Champ du prénom \\
+\hline
+{\em \+\_\+lastname} & Champ du nom \\
+\hline
+{\em \+\_\+bac} & Liste des bacs \\
+\hline
+{\em \+\_\+departement} & Liste des départements\\
+\hline
+{\em \+\_\+promo} & Référence vers la promotion \\
+\hline
+{\em \+\_\+id} & Champ pour l\textquotesingle{}identifiant de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+firstname} & Champ pour le prénom de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+lastname} & Champ pour le nom de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+bac} & Combo\+Box pour le bac de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+departement} & Combo\+Box pour le département de l\textquotesingle{}étudiant \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_add_a30d6a1039043ca506606bec9ca8e1f4a}\index{ControllerAdd@{ControllerAdd}!control@{control}}
+\index{control@{control}!ControllerAdd@{ControllerAdd}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily \label{class_controller_add_a30d6a1039043ca506606bec9ca8e1f4a} 
+void Controller\+Add\+::control (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contrôle l\textquotesingle{}ajout d\textquotesingle{}un étudiant. 
+
+Méthode qui gère l\textquotesingle{}ajout d\textquotesingle{}un étudiant à la promotion Vérifie les champs, formate les champs, et ajoute l\textquotesingle{}étudiant si tout est valide. 
+
+Implements \mbox{\hyperlink{class_controller_a98bb51da5b6ef1e688cbbcdcd585afb6}{Controller}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{controlleradd_8h}{controlleradd.\+h}}\item 
+\mbox{\hyperlink{controlleradd_8cpp}{controlleradd.\+cpp}}\end{DoxyCompactItemize}

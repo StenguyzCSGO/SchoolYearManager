@@ -1,0 +1,104 @@
+\doxysection{Observable Class Reference}
+\hypertarget{class_observable}{}\label{class_observable}\index{Observable@{Observable}}
+
+
+Classe de base pour un sujet observable.  
+
+
+
+
+{\ttfamily \#include $<$observer.\+h$>$}
+
+Inheritance diagram for Observable\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_observable}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observable_a058acb5a674eba2b96648c66a27440d8}{\texorpdfstring{$\sim$}{\string~}\+Observable}} ()=default
+\item 
+void \mbox{\hyperlink{class_observable_a41116955e42a9135cafed2536615576b}{add\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}observer)
+\begin{DoxyCompactList}\small\item\em Ajoute un observateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_a01c4105c6a88640eaf2c32e38064e20e}{remove\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}observer)
+\begin{DoxyCompactList}\small\item\em Supprime un observateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_ab1eab091f5c10902041217357995019d}{notify\+Observer}} () const
+\begin{DoxyCompactList}\small\item\em Notifie tous les observateurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+QList$<$ \mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_observable_af008e39a719574a0204c35fd8ee8d8d5}{observers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe de base pour un sujet observable. 
+
+Gère les observers et les notifie lors de changements 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_observable_a058acb5a674eba2b96648c66a27440d8}\index{Observable@{Observable}!````~Observable@{\texorpdfstring{$\sim$}{\string~}Observable}}
+\index{````~Observable@{\texorpdfstring{$\sim$}{\string~}Observable}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Observable()}{\string~Observable()}}
+{\footnotesize\ttfamily \label{class_observable_a058acb5a674eba2b96648c66a27440d8} 
+virtual Observable\+::\texorpdfstring{$\sim$}{\string~}\+Observable (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_observable_a41116955e42a9135cafed2536615576b}\index{Observable@{Observable}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily \label{class_observable_a41116955e42a9135cafed2536615576b} 
+void Observable\+::add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}}]{observer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Ajoute un observateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Observateur à ajouter \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_observable_ab1eab091f5c10902041217357995019d}\index{Observable@{Observable}!notifyObserver@{notifyObserver}}
+\index{notifyObserver@{notifyObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{notifyObserver()}{notifyObserver()}}
+{\footnotesize\ttfamily \label{class_observable_ab1eab091f5c10902041217357995019d} 
+void Observable\+::notify\+Observer (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Notifie tous les observateurs. 
+
+Appelle update() sur chaque observateur \Hypertarget{class_observable_a01c4105c6a88640eaf2c32e38064e20e}\index{Observable@{Observable}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily \label{class_observable_a01c4105c6a88640eaf2c32e38064e20e} 
+void Observable\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}}]{observer}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Supprime un observateur. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Observateur à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_observable_af008e39a719574a0204c35fd8ee8d8d5}\index{Observable@{Observable}!observers@{observers}}
+\index{observers@{observers}!Observable@{Observable}}
+\doxysubsubsection{\texorpdfstring{observers}{observers}}
+{\footnotesize\ttfamily \label{class_observable_af008e39a719574a0204c35fd8ee8d8d5} 
+QList$<$\mbox{\hyperlink{class_observer}{Observer}}\texorpdfstring{$\ast$}{*}$>$ Observable\+::observers\hspace{0.3cm}{\ttfamily [protected]}}
+
+Liste des observateurs 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{observer_8h}{observer.\+h}}\end{DoxyCompactItemize}

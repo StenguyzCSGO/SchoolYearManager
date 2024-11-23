@@ -23,3 +23,11 @@
 1. Clone this repository:
    ```bash
    git clone https://github.com/StenguyzCSGO/SchoolYearManager.git
+ 
+2. Open the project in Qt Creator.
+3. Configure the build environment (make sure the correct Qt version is selected).
+4. Build and run the application.
+
+## Contribution
+
+This project is an academic assignment and may not be actively maintained. Contributions are welcome but might not be reviewed promptly.

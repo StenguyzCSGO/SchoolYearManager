@@ -1,0 +1,269 @@
+\doxysection{Promotion Class Reference}
+\hypertarget{class_promotion}{}\label{class_promotion}\index{Promotion@{Promotion}}
+
+
+Gestion des étudiants dans une promotion.  
+
+
+
+
+{\ttfamily \#include $<$promotion.\+h$>$}
+
+Inheritance diagram for Promotion\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_promotion}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_promotion_a13d1b5b70603760910b4a31fe19c32f4}{Promotion}} (QString filename)
+\begin{DoxyCompactList}\small\item\em Constructeur avec chargement d\textquotesingle{}un fichier. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}{\texorpdfstring{$\sim$}{\string~}\+Promotion}} ()
+\begin{DoxyCompactList}\small\item\em Destructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_afbbd47a81de3b07fb78b43c4acd63543}{add}} (const \mbox{\hyperlink{class_student}{Student}} \&)
+\begin{DoxyCompactList}\small\item\em Ajoute un étudiant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a93be5d04ed973e6e1f02e1456e67d8ef}{remove}} (const \mbox{\hyperlink{class_student}{Student}} \&)
+\begin{DoxyCompactList}\small\item\em Supprime un étudiant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_promotion_a8d35ee1fff430a83b7ba9201c3b26270}{remove}} (const QString \&)
+\begin{DoxyCompactList}\small\item\em Supprime un étudiant par son ID. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_student}{Student}} \mbox{\hyperlink{class_promotion_a4e53cfc026ac48e3953e5b2b539d891a}{find}} (QString) const
+\begin{DoxyCompactList}\small\item\em Trouve un étudiant par son nom. \end{DoxyCompactList}\item 
+QString\+List \mbox{\hyperlink{class_promotion_a34ff60834f34f45b407e998e82f160b9}{get\+List}} () const
+\begin{DoxyCompactList}\small\item\em Retourne la liste des étudiants sous forme de QString\+List. \end{DoxyCompactList}\item 
+QMap$<$ QString, int $>$ \mbox{\hyperlink{class_promotion_a18b55cddbe8c16b3c8185a97b9f26818}{get\+Bac\+List}} () const
+\begin{DoxyCompactList}\small\item\em Retourne une map des bacs avec le nombre d\textquotesingle{}étudiants par bac. \end{DoxyCompactList}\item 
+QMap$<$ QString, int $>$ \mbox{\hyperlink{class_promotion_a067261358b9aebb409d73cce92872ae0}{get\+Departement\+List}} () const
+\begin{DoxyCompactList}\small\item\em Retourne une map des départements avec le nombre d\textquotesingle{}étudiants par département. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_observable}{Observable}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observable_a058acb5a674eba2b96648c66a27440d8}{\texorpdfstring{$\sim$}{\string~}\+Observable}} ()=default
+\item 
+void \mbox{\hyperlink{class_observable_a41116955e42a9135cafed2536615576b}{add\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}observer)
+\begin{DoxyCompactList}\small\item\em Ajoute un observateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_a01c4105c6a88640eaf2c32e38064e20e}{remove\+Observer}} (\mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*}observer)
+\begin{DoxyCompactList}\small\item\em Supprime un observateur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_observable_ab1eab091f5c10902041217357995019d}{notify\+Observer}} () const
+\begin{DoxyCompactList}\small\item\em Notifie tous les observateurs. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+QDebug \mbox{\hyperlink{class_promotion_a2c6c612eaab6f0dcbb6fc19585ef3754}{operator$<$$<$}} (QDebug os, const \mbox{\hyperlink{class_promotion}{Promotion}} \&dt)
+\begin{DoxyCompactList}\small\item\em Surcharge de l\textquotesingle{}opérateur \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} pour afficher la promotion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{class_observable}{Observable}}}
+\begin{DoxyCompactItemize}
+\item 
+QList$<$ \mbox{\hyperlink{class_observer}{Observer}} \texorpdfstring{$\ast$}{*} $>$ \mbox{\hyperlink{class_observable_af008e39a719574a0204c35fd8ee8d8d5}{observers}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gestion des étudiants dans une promotion. 
+
+Contient la liste des étudiants et permet de les ajouter, supprimer et retrouver 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_promotion_a13d1b5b70603760910b4a31fe19c32f4}\index{Promotion@{Promotion}!Promotion@{Promotion}}
+\index{Promotion@{Promotion}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{Promotion()}{Promotion()}}
+{\footnotesize\ttfamily \label{class_promotion_a13d1b5b70603760910b4a31fe19c32f4} 
+Promotion\+::\+Promotion (\begin{DoxyParamCaption}\item[{QString}]{filename}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur avec chargement d\textquotesingle{}un fichier. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Fichier contenant les étudiants à charger \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b}\index{Promotion@{Promotion}!````~Promotion@{\texorpdfstring{$\sim$}{\string~}Promotion}}
+\index{````~Promotion@{\texorpdfstring{$\sim$}{\string~}Promotion}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Promotion()}{\string~Promotion()}}
+{\footnotesize\ttfamily \label{class_promotion_a2bcd3a9d3ead85b89dc2509b2afe332b} 
+Promotion\+::\texorpdfstring{$\sim$}{\string~}\+Promotion (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Destructeur. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_promotion_afbbd47a81de3b07fb78b43c4acd63543}\index{Promotion@{Promotion}!add@{add}}
+\index{add@{add}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_promotion_afbbd47a81de3b07fb78b43c4acd63543} 
+void Promotion\+::add (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{etu}{}\end{DoxyParamCaption})}
+
+
+
+Ajoute un étudiant. 
+
+Ajouter un étudiant à la promotion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & Étudiant à ajouter\\
+\hline
+{\em etu} & L\textquotesingle{}étudiant à ajouter \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_promotion_a4e53cfc026ac48e3953e5b2b539d891a}\index{Promotion@{Promotion}!find@{find}}
+\index{find@{find}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{find()}{find()}}
+{\footnotesize\ttfamily \label{class_promotion_a4e53cfc026ac48e3953e5b2b539d891a} 
+\mbox{\hyperlink{class_student}{Student}} Promotion\+::find (\begin{DoxyParamCaption}\item[{QString}]{card\+ID}{}\end{DoxyParamCaption}) const}
+
+
+
+Trouve un étudiant par son nom. 
+
+Trouver un étudiant par son ID de carte.
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Nom de l\textquotesingle{}étudiant à rechercher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}étudiant correspondant
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em card\+ID} & L\textquotesingle{}ID de l\textquotesingle{}étudiant \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+L\textquotesingle{}étudiant trouvé 
+\end{DoxyReturn}
+\Hypertarget{class_promotion_a18b55cddbe8c16b3c8185a97b9f26818}\index{Promotion@{Promotion}!getBacList@{getBacList}}
+\index{getBacList@{getBacList}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{getBacList()}{getBacList()}}
+{\footnotesize\ttfamily \label{class_promotion_a18b55cddbe8c16b3c8185a97b9f26818} 
+QMap$<$ QString, int $>$ Promotion\+::get\+Bac\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retourne une map des bacs avec le nombre d\textquotesingle{}étudiants par bac. 
+
+Retourner le nombre d\textquotesingle{}étudiants par bac.
+
+\begin{DoxyReturn}{Returns}
+QMap des bacs
+
+Liste des bacs avec le nombre d\textquotesingle{}étudiants 
+\end{DoxyReturn}
+\Hypertarget{class_promotion_a067261358b9aebb409d73cce92872ae0}\index{Promotion@{Promotion}!getDepartementList@{getDepartementList}}
+\index{getDepartementList@{getDepartementList}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{getDepartementList()}{getDepartementList()}}
+{\footnotesize\ttfamily \label{class_promotion_a067261358b9aebb409d73cce92872ae0} 
+QMap$<$ QString, int $>$ Promotion\+::get\+Departement\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retourne une map des départements avec le nombre d\textquotesingle{}étudiants par département. 
+
+Retourner le nombre d\textquotesingle{}étudiants par département.
+
+\begin{DoxyReturn}{Returns}
+QMap des départements
+
+Liste des départements avec le nombre d\textquotesingle{}étudiants 
+\end{DoxyReturn}
+\Hypertarget{class_promotion_a34ff60834f34f45b407e998e82f160b9}\index{Promotion@{Promotion}!getList@{getList}}
+\index{getList@{getList}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{getList()}{getList()}}
+{\footnotesize\ttfamily \label{class_promotion_a34ff60834f34f45b407e998e82f160b9} 
+QString\+List Promotion\+::get\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
+
+
+
+Retourne la liste des étudiants sous forme de QString\+List. 
+
+Retourner la liste des étudiants sous forme de texte.
+
+\begin{DoxyReturn}{Returns}
+Liste des étudiants 
+\end{DoxyReturn}
+\Hypertarget{class_promotion_a8d35ee1fff430a83b7ba9201c3b26270}\index{Promotion@{Promotion}!remove@{remove}}
+\index{remove@{remove}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \label{class_promotion_a8d35ee1fff430a83b7ba9201c3b26270} 
+void Promotion\+::remove (\begin{DoxyParamCaption}\item[{const QString \&}]{list\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Supprime un étudiant par son ID. 
+
+Supprimer un étudiant de la promotion par son texte d\textquotesingle{}affichage.
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & ID de l\textquotesingle{}étudiant à supprimer\\
+\hline
+{\em list\+Name} & Le texte de l\textquotesingle{}étudiant dans la vue \\
+\hline
+\end{DoxyParams}
+\Hypertarget{class_promotion_a93be5d04ed973e6e1f02e1456e67d8ef}\index{Promotion@{Promotion}!remove@{remove}}
+\index{remove@{remove}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \label{class_promotion_a93be5d04ed973e6e1f02e1456e67d8ef} 
+void Promotion\+::remove (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_student}{Student}} \&}]{etu}{}\end{DoxyParamCaption})}
+
+
+
+Supprime un étudiant. 
+
+Supprimer un étudiant spécifique de la promotion.
+
+
+\begin{DoxyParams}{Parameters}
+{\em student} & Étudiant à supprimer\\
+\hline
+{\em etu} & L\textquotesingle{}étudiant à supprimer \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Friends And Related Symbol Documentation}
+\Hypertarget{class_promotion_a2c6c612eaab6f0dcbb6fc19585ef3754}\index{Promotion@{Promotion}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Promotion@{Promotion}}
+\doxysubsubsection{\texorpdfstring{operator$<$$<$}{operator<<}}
+{\footnotesize\ttfamily \label{class_promotion_a2c6c612eaab6f0dcbb6fc19585ef3754} 
+QDebug operator$<$$<$ (\begin{DoxyParamCaption}\item[{QDebug}]{os}{, }\item[{const \mbox{\hyperlink{class_promotion}{Promotion}} \&}]{dt}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+Surcharge de l\textquotesingle{}opérateur \texorpdfstring{$<$}{<}\texorpdfstring{$<$}{<} pour afficher la promotion. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie \\
+\hline
+{\em dt} & \doxylink{class_promotion}{Promotion} à afficher \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Flux modifié
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em os} & Flux de sortie \\
+\hline
+{\em dt} & \doxylink{class_promotion}{Promotion} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Flux de sortie mis à jour 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{promotion_8h}{promotion.\+h}}\item 
+\mbox{\hyperlink{promotion_8cpp}{promotion.\+cpp}}\end{DoxyCompactItemize}

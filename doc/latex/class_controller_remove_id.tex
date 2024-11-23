@@ -1,0 +1,79 @@
+\doxysection{Controller\+Remove\+Id Class Reference}
+\hypertarget{class_controller_remove_id}{}\label{class_controller_remove_id}\index{ControllerRemoveId@{ControllerRemoveId}}
+
+
+Contrôleur pour supprimer un étudiant par ID.  
+
+
+
+
+{\ttfamily \#include $<$controllerremoveid.\+h$>$}
+
+Inheritance diagram for Controller\+Remove\+Id\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller_remove_id}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_remove_id_a9779c115e3924e82bf381c6cb3806e09}{Controller\+Remove\+Id}} (QLine\+Edit \texorpdfstring{$\ast$}{*}line\+Edit, \mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}promotion)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controller_remove_id_a2ce527a496a7d3f2f92391911cf9e7be}{control}} () override
+\begin{DoxyCompactList}\small\item\em Contrôle la suppression d\textquotesingle{}un étudiant par ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+
+
+\doxysubsection{Detailed Description}
+Contrôleur pour supprimer un étudiant par ID. 
+
+Hérite de \doxylink{class_controller}{Controller}, supprime un étudiant de la promo via l\textquotesingle{}ID. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_controller_remove_id_a9779c115e3924e82bf381c6cb3806e09}\index{ControllerRemoveId@{ControllerRemoveId}!ControllerRemoveId@{ControllerRemoveId}}
+\index{ControllerRemoveId@{ControllerRemoveId}!ControllerRemoveId@{ControllerRemoveId}}
+\doxysubsubsection{\texorpdfstring{ControllerRemoveId()}{ControllerRemoveId()}}
+{\footnotesize\ttfamily \label{class_controller_remove_id_a9779c115e3924e82bf381c6cb3806e09} 
+Controller\+Remove\+Id\+::\+Controller\+Remove\+Id (\begin{DoxyParamCaption}\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{line\+Edit}{, }\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{promotion}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur du contrôleur de suppression d\textquotesingle{}étudiant par ID.
+
+
+\begin{DoxyParams}{Parameters}
+{\em line\+Edit} & Champ pour l\textquotesingle{}ID à supprimer \\
+\hline
+{\em promotion} & Instance de \doxylink{class_promotion}{Promotion}\\
+\hline
+{\em line\+Edit} & Champ pour saisir l\textquotesingle{}ID de l\textquotesingle{}étudiant à supprimer \\
+\hline
+{\em promotion} & Référence vers la promotion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_remove_id_a2ce527a496a7d3f2f92391911cf9e7be}\index{ControllerRemoveId@{ControllerRemoveId}!control@{control}}
+\index{control@{control}!ControllerRemoveId@{ControllerRemoveId}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily \label{class_controller_remove_id_a2ce527a496a7d3f2f92391911cf9e7be} 
+void Controller\+Remove\+Id\+::control (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contrôle la suppression d\textquotesingle{}un étudiant par ID. 
+
+Méthode qui gère la suppression d\textquotesingle{}un étudiant par son ID Vérifie que l\textquotesingle{}ID est valide et supprime l\textquotesingle{}étudiant si trouvé. 
+
+Implements \mbox{\hyperlink{class_controller_a98bb51da5b6ef1e688cbbcdcd585afb6}{Controller}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{controllerremoveid_8h}{controllerremoveid.\+h}}\item 
+\mbox{\hyperlink{controllerremoveid_8cpp}{controllerremoveid.\+cpp}}\end{DoxyCompactItemize}

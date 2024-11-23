@@ -1,0 +1,139 @@
+\doxysection{View\+Forms Class Reference}
+\hypertarget{class_view_forms}{}\label{class_view_forms}\index{ViewForms@{ViewForms}}
+
+
+Vue des formulaires de gestion des étudiants.  
+
+
+
+
+{\ttfamily \#include $<$view\+Forms.\+h$>$}
+
+Inheritance diagram for View\+Forms\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view_forms}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_view_forms_afd2be9f70c5ce5a631a963d4f9544d70}{View\+Forms}} (\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}\+\_\+promo, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+line\+Edit, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+id, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+firstname, QLine\+Edit \texorpdfstring{$\ast$}{*}\+\_\+lastname, QCombo\+Box \texorpdfstring{$\ast$}{*}\+\_\+bac, QCombo\+Box \texorpdfstring{$\ast$}{*}\+\_\+departement)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a8c35c36a7729d3cece0aa2a42ef6556e}{init}} ()
+\begin{DoxyCompactList}\small\item\em Initialise la vue. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a06b6ab988036097375f7b50c26b4a302}{update}} () override
+\begin{DoxyCompactList}\small\item\em Met à jour la vue lors des changements. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a30b83ad33d418874a15cf4a2f6bd892e}{add}} ()
+\begin{DoxyCompactList}\small\item\em Ajoute un étudiant à la promotion. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_forms_a4899e803a30f5df495cfce2ede565b0e}{remove\+Id}} ()
+\begin{DoxyCompactList}\small\item\em Supprime un étudiant par ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_observer}{Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observer_a37824643eeaef086de17bba2717d865a}{\texorpdfstring{$\sim$}{\string~}\+Observer}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Vue des formulaires de gestion des étudiants. 
+
+Permet l\textquotesingle{}ajout et la suppression des étudiants via des formulaires 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_view_forms_afd2be9f70c5ce5a631a963d4f9544d70}\index{ViewForms@{ViewForms}!ViewForms@{ViewForms}}
+\index{ViewForms@{ViewForms}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{ViewForms()}{ViewForms()}}
+{\footnotesize\ttfamily \label{class_view_forms_afd2be9f70c5ce5a631a963d4f9544d70} 
+View\+Forms\+::\+View\+Forms (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{\+\_\+promo}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+line\+Edit}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+id}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+firstname}{, }\item[{QLine\+Edit \texorpdfstring{$\ast$}{*}}]{\+\_\+lastname}{, }\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{\+\_\+bac}{, }\item[{QCombo\+Box \texorpdfstring{$\ast$}{*}}]{\+\_\+departement}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \doxylink{class_view_forms}{View\+Forms}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+promo} & \doxylink{class_promotion}{Promotion} des étudiants \\
+\hline
+{\em \+\_\+line\+Edit} & Champ pour saisir l\textquotesingle{}ID \\
+\hline
+{\em \+\_\+id} & Champ pour saisir l\textquotesingle{}ID de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+firstname} & Champ pour saisir le prénom \\
+\hline
+{\em \+\_\+lastname} & Champ pour saisir le nom \\
+\hline
+{\em \+\_\+bac} & Combo\+Box pour sélectionner le bac \\
+\hline
+{\em \+\_\+departement} & Combo\+Box pour sélectionner le département\\
+\hline
+{\em \+\_\+promo} & L\textquotesingle{}objet \doxylink{class_promotion}{Promotion} pour accéder à la liste des étudiants \\
+\hline
+{\em \+\_\+line\+Edit} & Le champ de texte pour la suppression d\textquotesingle{}un étudiant \\
+\hline
+{\em \+\_\+id} & Le champ de texte pour l\textquotesingle{}ID de l\textquotesingle{}étudiant à ajouter \\
+\hline
+{\em \+\_\+firstname} & Le champ de texte pour le prénom de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+lastname} & Le champ de texte pour le nom de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+bac} & La combobox pour choisir le bac de l\textquotesingle{}étudiant \\
+\hline
+{\em \+\_\+departement} & La combobox pour choisir le département de l\textquotesingle{}étudiant Crée les objets contrôleurs et appelle les méthodes d\textquotesingle{}initialisation et de mise à jour. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_view_forms_a30b83ad33d418874a15cf4a2f6bd892e}\index{ViewForms@{ViewForms}!add@{add}}
+\index{add@{add}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily \label{class_view_forms_a30b83ad33d418874a15cf4a2f6bd892e} 
+void View\+Forms\+::add (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Ajoute un étudiant à la promotion. 
+
+Ajoute un étudiant Appelle la méthode de contrôle du contrôleur d\textquotesingle{}ajout pour ajouter un étudiant. \Hypertarget{class_view_forms_a8c35c36a7729d3cece0aa2a42ef6556e}\index{ViewForms@{ViewForms}!init@{init}}
+\index{init@{init}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{init()}{init()}}
+{\footnotesize\ttfamily \label{class_view_forms_a8c35c36a7729d3cece0aa2a42ef6556e} 
+void View\+Forms\+::init (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Initialise la vue. 
+
+Initialise les éléments de la vue des formulaires Ajoute les items pour le bac et charge les départements depuis le fichier CSV dans la combobox correspondante. \Hypertarget{class_view_forms_a4899e803a30f5df495cfce2ede565b0e}\index{ViewForms@{ViewForms}!removeId@{removeId}}
+\index{removeId@{removeId}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{removeId()}{removeId()}}
+{\footnotesize\ttfamily \label{class_view_forms_a4899e803a30f5df495cfce2ede565b0e} 
+void View\+Forms\+::remove\+Id (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Supprime un étudiant par ID. 
+
+Supprime un étudiant par son ID Appelle la méthode de contrôle du contrôleur de suppression d\textquotesingle{}ID. \Hypertarget{class_view_forms_a06b6ab988036097375f7b50c26b4a302}\index{ViewForms@{ViewForms}!update@{update}}
+\index{update@{update}!ViewForms@{ViewForms}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_view_forms_a06b6ab988036097375f7b50c26b4a302} 
+void View\+Forms\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Met à jour la vue lors des changements. 
+
+Met à jour les champs du formulaire Efface les champs d\textquotesingle{}ID, prénom, nom, et réinitialise les combobox. 
+
+Implements \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{view_forms_8h}{view\+Forms.\+h}}\item 
+\mbox{\hyperlink{view_forms_8cpp}{view\+Forms.\+cpp}}\end{DoxyCompactItemize}

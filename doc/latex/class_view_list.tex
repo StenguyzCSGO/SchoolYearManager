@@ -1,0 +1,95 @@
+\doxysection{View\+List Class Reference}
+\hypertarget{class_view_list}{}\label{class_view_list}\index{ViewList@{ViewList}}
+
+
+Classe pour gérer la vue de liste d\textquotesingle{}étudiants.  
+
+
+
+
+{\ttfamily \#include $<$view\+List.\+h$>$}
+
+Inheritance diagram for View\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view_list}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_view_list_a02ae81afaf0d6c18de0d530990233848}{View\+List}} (QList\+Widget \texorpdfstring{$\ast$}{*}list\+Widget, \mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}\+\_\+promotion)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}{update}} () override
+\begin{DoxyCompactList}\small\item\em Met à jour la liste des étudiants affichée. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_list_a0760e3ed3d7ff095a2dcb0b7a2d87911}{remove\+List}} ()
+\begin{DoxyCompactList}\small\item\em Supprime l\textquotesingle{}étudiant sélectionné de la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_observer}{Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observer_a37824643eeaef086de17bba2717d865a}{\texorpdfstring{$\sim$}{\string~}\+Observer}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe pour gérer la vue de liste d\textquotesingle{}étudiants. 
+
+Affiche et met à jour la liste des étudiants dans un QList\+Widget 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_view_list_a02ae81afaf0d6c18de0d530990233848}\index{ViewList@{ViewList}!ViewList@{ViewList}}
+\index{ViewList@{ViewList}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{ViewList()}{ViewList()}}
+{\footnotesize\ttfamily \label{class_view_list_a02ae81afaf0d6c18de0d530990233848} 
+View\+List\+::\+View\+List (\begin{DoxyParamCaption}\item[{QList\+Widget \texorpdfstring{$\ast$}{*}}]{list\+Widget}{, }\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{\+\_\+promotion}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \doxylink{class_view_list}{View\+List}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Widget} & Liste d\textquotesingle{}affichage des étudiants \\
+\hline
+{\em \+\_\+promotion} & \doxylink{class_promotion}{Promotion} des étudiants\\
+\hline
+{\em list\+Widget} & Le widget de type QList\+Widget où afficher la liste des étudiants \\
+\hline
+{\em \+\_\+promotion} & L\textquotesingle{}objet \doxylink{class_promotion}{Promotion} qui contient la liste des étudiants Initialise la classe en créant un contrôleur pour la suppression des étudiants et en mettant à jour la vue avec les étudiants actuels. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_view_list_a0760e3ed3d7ff095a2dcb0b7a2d87911}\index{ViewList@{ViewList}!removeList@{removeList}}
+\index{removeList@{removeList}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{removeList()}{removeList()}}
+{\footnotesize\ttfamily \label{class_view_list_a0760e3ed3d7ff095a2dcb0b7a2d87911} 
+void View\+List\+::remove\+List (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Supprime l\textquotesingle{}étudiant sélectionné de la liste. 
+
+Supprime les étudiants sélectionnés dans la liste Appelle le contrôleur pour supprimer les étudiants sélectionnés de la liste de la promotion. \Hypertarget{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee}\index{ViewList@{ViewList}!update@{update}}
+\index{update@{update}!ViewList@{ViewList}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_view_list_a07587383a9c83afcf5ab628ff86cc6ee} 
+void View\+List\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Met à jour la liste des étudiants affichée. 
+
+Met à jour la liste des étudiants dans le QList\+Widget Vide la liste actuelle du QList\+Widget et y ajoute la liste des étudiants de la promotion. 
+
+Implements \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{view_list_8h}{view\+List.\+h}}\item 
+\mbox{\hyperlink{view_list_8cpp}{view\+List.\+cpp}}\end{DoxyCompactItemize}

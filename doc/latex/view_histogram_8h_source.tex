@@ -1,0 +1,32 @@
+\doxysection{view\+Histogram.\+h}
+\hypertarget{view_histogram_8h_source}{}\label{view_histogram_8h_source}\mbox{\hyperlink{view_histogram_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{promotion_8h}{promotion.h}}"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QWidget>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <QBarSeries>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <QChart>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <QChartView>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <QGridLayout>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <QValueAxis>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <QBarCategoryAxis>}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#include\ <QBarSet>}}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00012\ QT\_USE\_NAMESPACE}
+\DoxyCodeLine{00013\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view_histogram}{ViewHistogram}}\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00021\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_view_histogram_a86df4a5065e6aa9aa9a0faf01a56906d}{ViewHistogram}}(\mbox{\hyperlink{class_promotion}{Promotion}}*\ \_promo,\ QWidget*\ \_widget);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00032\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_histogram_a9d8a8c46008ff6ea819deff0c5f29e33}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00035\ \ \ \ \ \mbox{\hyperlink{class_promotion}{Promotion}}*\ promo;\ }
+\DoxyCodeLine{00036\ \ \ \ \ QWidget*\ widget;\ }
+\DoxyCodeLine{00037\ \ \ \ \ QBarSeries*\ series;\ }
+\DoxyCodeLine{00038\ \ \ \ \ QValueAxis*\ axisY;\ }
+\DoxyCodeLine{00039\ \};}
+
+\end{DoxyCode}

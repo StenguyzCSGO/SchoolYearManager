@@ -1,0 +1,36 @@
+\doxysection{student.\+h}
+\hypertarget{student_8h_source}{}\label{student_8h_source}\mbox{\hyperlink{student_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <QDebug>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QString>}}
+\DoxyCodeLine{00004\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_student}{Student}}}
+\DoxyCodeLine{00010\ \{}
+\DoxyCodeLine{00011\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00012\ \ \ \ \ QString\ cardID;\ }
+\DoxyCodeLine{00013\ \ \ \ \ QString\ firstname;\ }
+\DoxyCodeLine{00014\ \ \ \ \ QString\ lastname;\ }
+\DoxyCodeLine{00015\ \ \ \ \ QString\ bac;\ }
+\DoxyCodeLine{00016\ \ \ \ \ QString\ department;\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{class_student_a920719b2d4f0cf5a3ed71db2eab695db}{Student}}(QString\ =QString(),\ QString\ =QString(),\ QString\ =QString(),\ QString\ =QString(),\ QString\ =QString());}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_a4418b826b6d7dbb04d87410a6f8c4f50}{getCardID}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cardID;\ \}}
+\DoxyCodeLine{00034\ }
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_a0336d09a30d9a6d3e985ffed9ca3f75b}{getFirstname}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ firstname;\ \}}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_aabbe95268ebc3a27f2e90d2814282385}{getLastname}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ lastname;\ \}}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00051\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_a8654a4afb5a60032f41129afc3c5fdee}{getBac}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ bac;\ \}}
+\DoxyCodeLine{00052\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_a44b27a665209bd34227717a744d165f1}{getDepartment}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ department;\ \}}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00063\ \ \ \ \ \textcolor{keyword}{const}\ QString\ \mbox{\hyperlink{class_student_ae3aaedb6893fa9d11f9d82f33cec9a99}{getText}}()\textcolor{keyword}{\ const\ }\{\ \textcolor{keywordflow}{return}\ cardID\ +\ \textcolor{stringliteral}{"{}\ -\/\ "{}}\ +\ lastname\ +\ \textcolor{stringliteral}{"{}\ "{}}\ +\ firstname\ +\ \textcolor{stringliteral}{"{}\ ("{}}\ +\ department\ +\ \textcolor{stringliteral}{"{})"{}};\ \}}
+\DoxyCodeLine{00064\ }
+\DoxyCodeLine{00071\ \ \ \ \ \textcolor{keyword}{friend}\ QDebug\ \mbox{\hyperlink{class_student_a4ca0fd0d4dbc81a330e45d39ad3f9d1e}{operator<<}}(QDebug\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ dt);}
+\DoxyCodeLine{00072\ \};}
+\DoxyCodeLine{00073\ }
+\DoxyCodeLine{00080\ QDebug\ \mbox{\hyperlink{student_8h_a4ca0fd0d4dbc81a330e45d39ad3f9d1e}{operator<<}}(QDebug\ os,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{class_student}{Student}}\&\ dt);}
+
+\end{DoxyCode}

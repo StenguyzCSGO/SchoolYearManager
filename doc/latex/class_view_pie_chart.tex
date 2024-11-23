@@ -1,0 +1,83 @@
+\doxysection{View\+Pie\+Chart Class Reference}
+\hypertarget{class_view_pie_chart}{}\label{class_view_pie_chart}\index{ViewPieChart@{ViewPieChart}}
+
+
+Classe pour gérer la vue du graphique en camembert.  
+
+
+
+
+{\ttfamily \#include $<$view\+Pie\+Chart.\+h$>$}
+
+Inheritance diagram for View\+Pie\+Chart\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_view_pie_chart}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_view_pie_chart_a959f3a776f22492ba0ed973fb0d162af}{View\+Pie\+Chart}} (\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}\+\_\+promo, QWidget \texorpdfstring{$\ast$}{*}\+\_\+widget)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_view_pie_chart_a164b314e0401cc0bd511afc35e5a43b7}{update}} () override
+\begin{DoxyCompactList}\small\item\em Met à jour le graphique en fonction des données de la promotion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_observer}{Observer}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_observer_a37824643eeaef086de17bba2717d865a}{\texorpdfstring{$\sim$}{\string~}\+Observer}} ()=default
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Classe pour gérer la vue du graphique en camembert. 
+
+Affiche et met à jour un graphique en camembert des données de la promotion 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_view_pie_chart_a959f3a776f22492ba0ed973fb0d162af}\index{ViewPieChart@{ViewPieChart}!ViewPieChart@{ViewPieChart}}
+\index{ViewPieChart@{ViewPieChart}!ViewPieChart@{ViewPieChart}}
+\doxysubsubsection{\texorpdfstring{ViewPieChart()}{ViewPieChart()}}
+{\footnotesize\ttfamily \label{class_view_pie_chart_a959f3a776f22492ba0ed973fb0d162af} 
+View\+Pie\+Chart\+::\+View\+Pie\+Chart (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{\+\_\+promo}{, }\item[{QWidget \texorpdfstring{$\ast$}{*}}]{\+\_\+widget}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur de la classe \doxylink{class_view_pie_chart}{View\+Pie\+Chart}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em \+\_\+promo} & \doxylink{class_promotion}{Promotion} des étudiants \\
+\hline
+{\em \+\_\+widget} & Widget pour afficher le graphique\\
+\hline
+{\em \+\_\+promo} & L\textquotesingle{}objet \doxylink{class_promotion}{Promotion} qui contient les données des étudiants \\
+\hline
+{\em \+\_\+widget} & Le widget où le graphique en secteurs (pie chart) sera affiché Initialise la classe, crée le graphique en secteurs et ajoute la série de données pour la répartition géographique des départements. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_view_pie_chart_a164b314e0401cc0bd511afc35e5a43b7}\index{ViewPieChart@{ViewPieChart}!update@{update}}
+\index{update@{update}!ViewPieChart@{ViewPieChart}}
+\doxysubsubsection{\texorpdfstring{update()}{update()}}
+{\footnotesize\ttfamily \label{class_view_pie_chart_a164b314e0401cc0bd511afc35e5a43b7} 
+void View\+Pie\+Chart\+::update (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Met à jour le graphique en fonction des données de la promotion. 
+
+Met à jour les données du graphique en secteurs avec les informations des départements Vide la série actuelle et ajoute les tranches du graphique basées sur la répartition des départements dans la promotion. 
+
+Implements \mbox{\hyperlink{class_observer_ac75e4b339faeb3ea6fe0a01bf0b4a215}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{view_pie_chart_8h}{view\+Pie\+Chart.\+h}}\item 
+\mbox{\hyperlink{view_pie_chart_8cpp}{view\+Pie\+Chart.\+cpp}}\end{DoxyCompactItemize}

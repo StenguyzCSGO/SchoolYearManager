@@ -1,0 +1,36 @@
+\doxysection{view\+Forms.\+h}
+\hypertarget{view_forms_8h_source}{}\label{view_forms_8h_source}\mbox{\hyperlink{view_forms_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <QObject>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <QDir>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{controlleradd_8h}{controlleradd.h}}"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{controllerremoveid_8h}{controllerremoveid.h}}"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_view_forms}{ViewForms}}\ :\ \textcolor{keyword}{public}\ QObject,\ \textcolor{keyword}{public}\ \mbox{\hyperlink{class_observer}{Observer}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00013\ \ \ \ \ Q\_OBJECT}
+\DoxyCodeLine{00014\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00025\ \ \ \ \ \mbox{\hyperlink{class_view_forms_afd2be9f70c5ce5a631a963d4f9544d70}{ViewForms}}(\mbox{\hyperlink{class_promotion}{Promotion}}*\ \_promo,\ QLineEdit*\ \_lineEdit,\ QLineEdit*\ \_id,\ QLineEdit*\ \_firstname,\ QLineEdit*\ \_lastname,\ QComboBox*\ \_bac,\ QComboBox*\ \_departement);}
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_forms_a8c35c36a7729d3cece0aa2a42ef6556e}{init}}();}
+\DoxyCodeLine{00031\ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_forms_a06b6ab988036097375f7b50c26b4a302}{update}}()\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00040\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_forms_a30b83ad33d418874a15cf4a2f6bd892e}{add}}();}
+\DoxyCodeLine{00041\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_view_forms_a4899e803a30f5df495cfce2ede565b0e}{removeId}}();}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{class_promotion}{Promotion}}*\ promo;\ }
+\DoxyCodeLine{00049\ \ \ \ \ \mbox{\hyperlink{class_controller_add}{ControllerAdd}}*\ controllerAdd;\ }
+\DoxyCodeLine{00050\ \ \ \ \ \mbox{\hyperlink{class_controller_remove_id}{ControllerRemoveId}}*\ controllerRemoveId;\ }
+\DoxyCodeLine{00051\ \ \ \ \ QLineEdit*\ lineEdit;\ }
+\DoxyCodeLine{00052\ \ \ \ \ QLineEdit*\ id;\ }
+\DoxyCodeLine{00053\ \ \ \ \ QLineEdit*\ firstname;\ }
+\DoxyCodeLine{00054\ \ \ \ \ QLineEdit*\ lastname;\ }
+\DoxyCodeLine{00055\ \ \ \ \ QComboBox*\ bac;\ }
+\DoxyCodeLine{00056\ \ \ \ \ QComboBox*\ departement;\ }
+\DoxyCodeLine{00057\ \};}
+
+\end{DoxyCode}

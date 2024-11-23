@@ -1,0 +1,79 @@
+\doxysection{Controller\+Remove\+List Class Reference}
+\hypertarget{class_controller_remove_list}{}\label{class_controller_remove_list}\index{ControllerRemoveList@{ControllerRemoveList}}
+
+
+Contrôleur pour supprimer un étudiant via une liste.  
+
+
+
+
+{\ttfamily \#include $<$controllerremovelist.\+h$>$}
+
+Inheritance diagram for Controller\+Remove\+List\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controller_remove_list}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_controller_remove_list_abaa0aa331efa82631b5cec180cbda748}{Controller\+Remove\+List}} (QList\+Widget \texorpdfstring{$\ast$}{*}list\+Widget, \mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}\+\_\+promotion)
+\begin{DoxyCompactList}\small\item\em Constructeur. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_controller_remove_list_a845afcd661513b222744d746395268b0}{control}} () override
+\begin{DoxyCompactList}\small\item\em Contrôle la suppression d\textquotesingle{}un étudiant via la liste. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{class_controller}{Controller}}}
+
+
+\doxysubsection{Detailed Description}
+Contrôleur pour supprimer un étudiant via une liste. 
+
+Hérite de \doxylink{class_controller}{Controller}, supprime un étudiant sélectionné dans une liste. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_controller_remove_list_abaa0aa331efa82631b5cec180cbda748}\index{ControllerRemoveList@{ControllerRemoveList}!ControllerRemoveList@{ControllerRemoveList}}
+\index{ControllerRemoveList@{ControllerRemoveList}!ControllerRemoveList@{ControllerRemoveList}}
+\doxysubsubsection{\texorpdfstring{ControllerRemoveList()}{ControllerRemoveList()}}
+{\footnotesize\ttfamily \label{class_controller_remove_list_abaa0aa331efa82631b5cec180cbda748} 
+Controller\+Remove\+List\+::\+Controller\+Remove\+List (\begin{DoxyParamCaption}\item[{QList\+Widget \texorpdfstring{$\ast$}{*}}]{list\+Widget}{, }\item[{\mbox{\hyperlink{class_promotion}{Promotion}} \texorpdfstring{$\ast$}{*}}]{\+\_\+promotion}{}\end{DoxyParamCaption})}
+
+
+
+Constructeur. 
+
+Constructeur du contrôleur de suppression d\textquotesingle{}étudiant par sélection dans la liste.
+
+
+\begin{DoxyParams}{Parameters}
+{\em list\+Widget} & Liste d\textquotesingle{}étudiants à partir de laquelle supprimer \\
+\hline
+{\em \+\_\+promotion} & Instance de \doxylink{class_promotion}{Promotion}\\
+\hline
+{\em list\+Widget} & Liste contenant les étudiants \\
+\hline
+{\em promotion} & Référence vers la promotion \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_controller_remove_list_a845afcd661513b222744d746395268b0}\index{ControllerRemoveList@{ControllerRemoveList}!control@{control}}
+\index{control@{control}!ControllerRemoveList@{ControllerRemoveList}}
+\doxysubsubsection{\texorpdfstring{control()}{control()}}
+{\footnotesize\ttfamily \label{class_controller_remove_list_a845afcd661513b222744d746395268b0} 
+void Controller\+Remove\+List\+::control (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Contrôle la suppression d\textquotesingle{}un étudiant via la liste. 
+
+Méthode qui gère la suppression d\textquotesingle{}étudiants sélectionnés dans la liste Supprime les étudiants sélectionnés dans la liste et met à jour la vue. 
+
+Implements \mbox{\hyperlink{class_controller_a98bb51da5b6ef1e688cbbcdcd585afb6}{Controller}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{controllerremovelist_8h}{controllerremovelist.\+h}}\item 
+\mbox{\hyperlink{controllerremovelist_8cpp}{controllerremovelist.\+cpp}}\end{DoxyCompactItemize}
